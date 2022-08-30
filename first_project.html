@@ -1,16 +1,42 @@
 <html>
-<!--This example uses the default bootstrap stylesheet-->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
     integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<!--provides a full-width container that can expand or collapse based on the size of viewport-->
+<style>
+    body {
+        background-color: LightGray;
+        font-family: Georgia, serif;
+    }
+
+    h1 {
+        color: black;
+        font-family: Georgia, serif;
+    }
+
+    p {
+        color: black;
+        font-family: Georgia, serif;
+    }
+
+    ul {
+        font-family: Georgia, serif;
+    }
+
+    h3 {
+        text-shadow: 2px 2px white;
+        font-weight: bold;
+
+    }
+
+    a {
+        color: darkblue;
+    }
+</style>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2 col-sm-12 col-xs-12">
             <nav id="navbar">
                 <h3>Technical Documentation</h3>
-                <!--content stacking for smaller screens-->
                 <ul class="nav nav-pills nav-stacked">
-                    <!--internal linking to the respective sections-->
                     <a class="nav-link" href="#Introduction" rel="internal">
                         <li>Introduction</li>
                     </a>
@@ -27,10 +53,10 @@
             <main id="main-doc">
                 <section class="main-section" id="Introduction">
                     <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
-                    <h3 style="background: black; color: white">Introduction</h3>
+                    <h3 style="color: black">Introduction</h3>
                     <article>
-                        <p>Java is one of the most popular and widely used programming languages.
-                        <ul>
+                        <p><b>Java is one of the most popular and widely used programming languages.</b>
+                        <ul style="color: black">
                             <li>Java has been one of the most popular programming languages for many years.</li>
                             <li>Java is Object Oriented. However, it is not considered as pure object-oriented as it
                                 provides support for primitive data types (like int, char, etc)</li>
@@ -54,10 +80,11 @@
                         </ul>
                     </article>
                 </section>
+                <hr>
                 <section class="main-section" id="History">
-                    <h3 style="background: black; color: white">History of Java</h3>
+                    <h3 style="color: black">History of Java</h3>
                     <article>
-                        <p>The complete History of Java Programming Language:</p>
+                        <p><b>The complete History of Java Programming Language:</b></p>
                         <p>Java is an Object-Oriented programming language developed by James Gosling in the early
                             1990s.
                             The team initiated this project to develop a language for digital devices such as set-top
@@ -91,11 +118,12 @@
                             in J2SE</p>
                         </artice>
                 </section>
+                <hr>
                 <section class="main-section" id="Facts">
-                    <h3 style="background: black; color: white">About topic</h3>
+                    <h3 style="color: black">About topic</h3>
                     <article>
-                        <p>Some interesting facts that all programmers should know about Java</p>
-                        <ul>
+                        <p><b>Some interesting facts that all programmers should know about Java</b></p>
+                        <ul style="color: black">
                             <li>Java was invented by accident. James Gosling was working at Sun Labs, around 1992.
                                 Gosling and his team were building a set-top box and started by “cleaning up” C++ and
                                 wound up with a new language and runtime. Thus Java or Oak came into being</li>
@@ -108,6 +136,8 @@
                         </ul>
                     </article>
                 </section>
+                <hr>
+                <br><br>
             </main>
         </div>
     </div>
