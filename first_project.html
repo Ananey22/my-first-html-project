@@ -30,10 +30,26 @@
     a {
         color: darkblue;
     }
+
+    .card {
+        background-color: white;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+        transition: 0.3s;
+        border-radius: 5px;
+    }
+
+    .card:hover {
+        box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .container {
+        padding: 2px 16px;
+    }
 </style>
 <div class="container-fluid">
     <div class="row">
         <div class="col-md-2 col-sm-12 col-xs-12">
+            <br>
             <nav id="navbar">
                 <h3>Technical Documentation</h3>
                 <ul class="nav nav-pills nav-stacked">
@@ -50,9 +66,11 @@
             </nav>
         </div>
         <div class="col-md-10 col-sm-12 col-xs-12">
+            <br><br>
             <main id="main-doc">
                 <section class="main-section" id="Introduction">
-                    <!--basic styling for the headings, better practice to do the same in a css file as the styling is same for all headers-->
+                    <div class="card">
+                        <div class="container">
                     <h3 style="color: black">Introduction</h3>
                     <article>
                         <p><b>Java is one of the most popular and widely used programming languages.</b>
@@ -79,47 +97,72 @@
                                 C++. Like C++, Java does static type checking, but Python does not.</li>
                         </ul>
                     </article>
+                    </div>
+                    </div>
                 </section>
                 <hr>
                 <section class="main-section" id="History">
-                    <h3 style="color: black">History of Java</h3>
-                    <article>
-                        <p><b>The complete History of Java Programming Language:</b></p>
-                        <p>Java is an Object-Oriented programming language developed by James Gosling in the early
-                            1990s.
-                            The team initiated this project to develop a language for digital devices such as set-top
-                            boxes, television, etc.
-                            Originally C++ was considered to be used in the project but the idea was rejected for
-                            several reasons(For instance C++ required more memory).
-                            Gosling endeavoured to alter and expand C++ however before long surrendered that for making
-                            another stage called Green.
-                            James Gosling and his team called their project “Greentalk” and its file extension was .gt
-                            and later became to known as “OAK”.
-                            Why “Oak”? The name Oak was used by Gosling after an oak tree that remained outside his
-                            office.
-                            Also, Oak is an image of solidarity and picked as a national tree of numerous nations like
-                            the U.S.A., France, Germany, Romania, etc.
-                            But they had to later rename it as “JAVA” as it was already a trademark by Oak Technologies.
-                            “JAVA” Gosling and his team did a brainstorm session and after the session, they came up
-                            with several names such as JAVA, DNA, SILK, RUBY, etc.
-                            Java name was decided after much discussion since it was so unique. The name Java originates
-                            from a sort of espresso bean, Java.
-                            Gosling came up with this name while having a coffee near his office.
-                            Java was created on the principles like Robust, Portable, Platform Independent, High
-                            Performance, Multithread, etc. and was called one of the Ten Best Products of 1995 by the
-                            TIME MAGAZINE.
-                            Currently, Java is used in internet programming, mobile devices, games, e-business
-                            solutions, etc.
-                            The Java language has experienced a few changes since JDK 1.0 just as various augmentations
-                            of classes and packages to the standard library.
-                            In Addition to the language changes, considerably more sensational changes have been made to
-                            the Java Class Library throughout the years,
-                            which has developed from a couple of hundred classes in JDK 1.0 to more than three thousand
-                            in J2SE</p>
-                        </artice>
+                    <div class="card">
+                        <div class="container">
+                            <h3 style="color: black">History of Java</h3>
+                            <article>
+                                <p><b>The complete History of Java Programming Language:</b></p>
+                                <p>Java is an Object-Oriented programming language developed by James Gosling in the
+                                    early
+                                    1990s.
+                                    The team initiated this project to develop a language for digital devices such as
+                                    set-top
+                                    boxes, television, etc.
+                                    Originally C++ was considered to be used in the project but the idea was rejected
+                                    for
+                                    several reasons(For instance C++ required more memory).
+                                    Gosling endeavoured to alter and expand C++ however before long surrendered that for
+                                    making
+                                    another stage called Green.
+                                    James Gosling and his team called their project “Greentalk” and its file extension
+                                    was
+                                    .gt
+                                    and later became to known as “OAK”.
+                                    Why “Oak”? The name Oak was used by Gosling after an oak tree that remained outside
+                                    his
+                                    office.
+                                    Also, Oak is an image of solidarity and picked as a national tree of numerous
+                                    nations
+                                    like
+                                    the U.S.A., France, Germany, Romania, etc.
+                                    But they had to later rename it as “JAVA” as it was already a trademark by Oak
+                                    Technologies.
+                                    “JAVA” Gosling and his team did a brainstorm session and after the session, they
+                                    came up
+                                    with several names such as JAVA, DNA, SILK, RUBY, etc.
+                                    Java name was decided after much discussion since it was so unique. The name Java
+                                    originates
+                                    from a sort of espresso bean, Java.
+                                    Gosling came up with this name while having a coffee near his office.
+                                    Java was created on the principles like Robust, Portable, Platform Independent, High
+                                    Performance, Multithread, etc. and was called one of the Ten Best Products of 1995
+                                    by
+                                    the
+                                    TIME MAGAZINE.
+                                    Currently, Java is used in internet programming, mobile devices, games, e-business
+                                    solutions, etc.
+                                    The Java language has experienced a few changes since JDK 1.0 just as various
+                                    augmentations
+                                    of classes and packages to the standard library.
+                                    In Addition to the language changes, considerably more sensational changes have been
+                                    made to
+                                    the Java Class Library throughout the years,
+                                    which has developed from a couple of hundred classes in JDK 1.0 to more than three
+                                    thousand
+                                    in J2SE</p>
+                                </artice>
+                        </div>
+                    </div>
                 </section>
                 <hr>
                 <section class="main-section" id="Facts">
+                    <div class="card">
+                        <div class="container">
                     <h3 style="color: black">About topic</h3>
                     <article>
                         <p><b>Some interesting facts that all programmers should know about Java</b></p>
@@ -135,6 +178,8 @@
                                 outside the developer James Gosling’s window.</li>
                         </ul>
                     </article>
+                    </div>
+                    </div>
                 </section>
                 <hr>
                 <br><br>
